@@ -1,0 +1,435 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="cloudAuraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ede9fe" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#f5f3ff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.4" />
+    </linearGradient>
+
+    <linearGradient id="cardBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#581c87" />
+      <stop offset="50%" stop-color="#4c1d95" />
+      <stop offset="100%" stop-color="#3b0764" />
+    </linearGradient>
+
+    <linearGradient id="cardBgAlt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6b21a8" />
+      <stop offset="100%" stop-color="#4c1d95" />
+    </linearGradient>
+
+    <linearGradient id="laptopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6d28d9" />
+      <stop offset="100%" stop-color="#4c1d95" />
+    </linearGradient>
+
+    <linearGradient id="jacketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="70%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <linearGradient id="donutSeg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <linearGradient id="donutSeg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333ea" />
+      <stop offset="100%" stop-color="#7e22ce" />
+    </linearGradient>
+
+    <linearGradient id="donutSeg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e9d5ff" />
+      <stop offset="100%" stop-color="#d8b4fe" />
+    </linearGradient>
+
+    <linearGradient id="donutSeg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6b21a8" />
+      <stop offset="100%" stop-color="#581c87" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#3b0764" flood-opacity="0.18" />
+    </filter>
+
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="10" stdDeviation="12" flood-color="#1e1b4b" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Clean Subtle Background -->
+  <rect width="1000" height="760" fill="transparent" />
+
+  <!-- Soft Fluid Backdrop Aura/Blob -->
+  <path
+    d="M 230 460 C 180 340, 260 210, 420 220 C 560 230, 680 180, 770 260 C 860 340, 870 510, 780 620 C 700 710, 310 740, 240 640 C 190 570, 260 520, 230 460 Z"
+    fill="url(#cloudAuraGrad)"
+    opacity="0.85"
+  />
+  <path
+    d="M 320 540 C 270 410, 350 300, 500 290 C 650 280, 790 350, 810 490 C 830 630, 670 700, 490 690 C 370 680, 350 610, 320 540 Z"
+    fill="#ffffff"
+    opacity="0.5"
+  />
+
+  <!-- Dashed Flight Trails -->
+  <!-- Trail 1: From left paper airplane to globe & right card -->
+  <path
+    d="M 50 230 Q 30 140, 95 180 T 260 120 T 500 70 T 780 100 T 890 350 T 930 520"
+    fill="none"
+    stroke="#3b0764"
+    stroke-width="2.2"
+    stroke-dasharray="6 7"
+    opacity="0.45"
+  />
+  <!-- Trail 2: Around left airplane -->
+  <path
+    d="M 75 190 C 40 230, 50 290, 85 280 C 120 270, 110 200, 75 190"
+    fill="none"
+    stroke="#3b0764"
+    stroke-width="2"
+    stroke-dasharray="4 5"
+    opacity="0.35"
+  />
+  <!-- Trail 3: Swoop to bottom right airplane -->
+  <path
+    d="M 850 420 C 930 430, 960 480, 930 550 C 900 610, 840 590, 880 540"
+    fill="none"
+    stroke="#3b0764"
+    stroke-width="2.2"
+    stroke-dasharray="5 6"
+    opacity="0.4"
+  />
+
+  <!-- Top-Left Paper Airplane -->
+  <g transform="translate(48, 120) rotate(-18)">
+    <polygon points="0,32 55,0 42,48" fill="#6d28d9" />
+    <polygon points="55,0 42,48 24,38" fill="#581c87" />
+    <polygon points="24,38 32,54 36,44" fill="#4c1d95" />
+    <polygon points="0,32 55,0 24,38" fill="#8b5cf6" />
+  </g>
+
+  <!-- Bottom-Right Paper Airplane -->
+  <g transform="translate(885, 520) rotate(52)">
+    <polygon points="0,32 55,0 42,48" fill="#6d28d9" />
+    <polygon points="55,0 42,48 24,38" fill="#581c87" />
+    <polygon points="24,38 32,54 36,44" fill="#4c1d95" />
+    <polygon points="0,32 55,0 24,38" fill="#8b5cf6" />
+  </g>
+
+  <!-- ============================================================
+       FLOATING DATA CARDS & CHARTS
+       ============================================================ -->
+
+  <!-- Card 1: Top-Left Bar Chart Dashboard Card -->
+  <g filter="url(#cardShadow)">
+    <rect x="125" y="160" width="215" height="190" rx="10" fill="url(#cardBgGrad)" />
+    <!-- Window top indicators -->
+    <rect x="145" y="178" width="55" height="5" rx="2.5" fill="#c4b5fd" opacity="0.9" />
+    <rect x="145" y="188" width="35" height="4" rx="2" fill="#a78bfa" opacity="0.6" />
+    <circle cx="310" cy="180" r="3" fill="#c4b5fd" />
+    <circle cx="320" cy="180" r="3" fill="#c4b5fd" />
+    <!-- Bar charts -->
+    <!-- Grid line -->
+    <line x1="145" y1="315" x2="315" y2="315" stroke="#7c3aed" stroke-width="1.5" opacity="0.5" />
+    <line x1="145" y1="260" x2="315" y2="260" stroke="#7c3aed" stroke-width="1" stroke-dasharray="3 3" opacity="0.25" />
+    <!-- Bars -->
+    <rect x="155" y="275" width="26" height="40" rx="3" fill="#4c1d95" />
+    <rect x="195" y="245" width="26" height="70" rx="3" fill="#3b0764" />
+    <rect x="235" y="230" width="26" height="85" rx="3" fill="#4c1d95" />
+    <rect x="275" y="215" width="26" height="100" rx="3" fill="#3b0764" />
+    <!-- Accents on top of bars -->
+    <rect x="155" y="275" width="26" height="6" rx="2" fill="#7c3aed" opacity="0.8" />
+    <rect x="195" y="245" width="26" height="6" rx="2" fill="#8b5cf6" opacity="0.8" />
+    <rect x="235" y="230" width="26" height="6" rx="2" fill="#a78bfa" opacity="0.8" />
+    <rect x="275" y="215" width="26" height="6" rx="2" fill="#c4b5fd" opacity="0.9" />
+  </g>
+
+  <!-- Card 2: Bottom-Left Bullet/Table Data Card -->
+  <g filter="url(#cardShadow)">
+    <rect x="42" y="310" width="195" height="110" rx="8" fill="url(#cardBgAlt)" />
+    <!-- Row 1 -->
+    <rect x="62" y="332" width="16" height="16" rx="3" fill="#c4b5fd" />
+    <rect x="88" y="335" width="85" height="5" rx="2.5" fill="#ffffff" opacity="0.9" />
+    <rect x="88" y="344" width="45" height="4" rx="2" fill="#a78bfa" opacity="0.7" />
+    <!-- Row 2 -->
+    <rect x="62" y="360" width="16" height="16" rx="3" fill="#a78bfa" />
+    <rect x="88" y="363" width="115" height="5" rx="2.5" fill="#ffffff" opacity="0.9" />
+    <rect x="88" y="372" width="65" height="4" rx="2" fill="#c4b5fd" opacity="0.7" />
+    <!-- Row 3 -->
+    <rect x="62" y="388" width="16" height="16" rx="3" fill="#8b5cf6" />
+    <rect x="88" y="391" width="95" height="5" rx="2.5" fill="#ffffff" opacity="0.9" />
+    <rect x="88" y="400" width="50" height="4" rx="2" fill="#a78bfa" opacity="0.7" />
+  </g>
+
+  <!-- Card 3: Top-Center Floating Globe/World Widget -->
+  <g filter="url(#cardShadow)">
+    <rect x="430" y="140" width="95" height="95" rx="8" fill="#581c87" />
+    <!-- Globe Circle -->
+    <circle cx="477" cy="187" r="38" fill="#8b5cf6" />
+    <!-- Continents -->
+    <path
+      d="M 455 170 C 465 160, 485 165, 495 175 C 500 180, 508 178, 513 183 C 510 195, 498 200, 490 196 C 480 192, 475 200, 465 198 C 452 195, 450 180, 455 170 Z"
+      fill="#4c1d95"
+    />
+    <path
+      d="M 470 205 C 478 200, 488 208, 492 218 C 480 223, 468 215, 470 205 Z"
+      fill="#4c1d95"
+    />
+    <path
+      d="M 445 185 C 448 180, 454 185, 452 192 C 445 193, 442 189, 445 185 Z"
+      fill="#4c1d95"
+    />
+    <!-- Longitude/Latitude lines -->
+    <ellipse cx="477" cy="187" rx="38" ry="18" fill="none" stroke="#a78bfa" stroke-width="1" opacity="0.35" />
+    <line x1="477" y1="149" x2="477" y2="225" stroke="#a78bfa" stroke-width="1" opacity="0.35" />
+  </g>
+
+  <!-- Card 4: Top-Right Donut Chart Dashboard Card -->
+  <g filter="url(#cardShadow)">
+    <rect x="618" y="235" width="222" height="160" rx="10" fill="url(#cardBgGrad)" />
+    <!-- Window Controls -->
+    <rect x="786" y="254" width="26" height="4" rx="2" fill="#c4b5fd" opacity="0.8" />
+    <rect x="786" y="262" width="18" height="4" rx="2" fill="#a78bfa" opacity="0.6" />
+    <line x1="638" y1="256" x2="656" y2="256" stroke="#c4b5fd" stroke-width="2.5" stroke-linecap="round" />
+    <!-- Donut Chart -->
+    <g transform="translate(725, 332)">
+      <!-- Segment 1 (Top Right) -->
+      <path
+        d="M 0 -44 A 44 44 0 0 1 42 12 L 23 6 A 24 24 0 0 0 0 -24 Z"
+        fill="url(#donutSeg1)"
+      />
+      <!-- Segment 2 (Bottom Right) -->
+      <path
+        d="M 42 12 A 44 44 0 0 1 -12 42 L -6 23 A 24 24 0 0 0 23 6 Z"
+        fill="url(#donutSeg2)"
+      />
+      <!-- Segment 3 (Bottom Left) -->
+      <path
+        d="M -12 42 A 44 44 0 0 1 -42 -12 L -23 -6 A 24 24 0 0 0 -6 23 Z"
+        fill="url(#donutSeg3)"
+      />
+      <!-- Segment 4 (Top Left) -->
+      <path
+        d="M -42 -12 A 44 44 0 0 1 0 -44 L 0 -24 A 24 24 0 0 0 -23 -6 Z"
+        fill="url(#donutSeg4)"
+      />
+      <!-- Inner hole -->
+      <circle cx="0" cy="0" r="23" fill="#4c1d95" />
+    </g>
+    <!-- Donut Legend / Stats on Left -->
+    <rect x="636" y="320" width="12" height="12" rx="2" fill="#c084fc" />
+    <rect x="654" y="324" width="28" height="4" rx="2" fill="#ffffff" opacity="0.8" />
+    <rect x="636" y="338" width="12" height="12" rx="2" fill="#a855f7" />
+    <rect x="654" y="342" width="22" height="4" rx="2" fill="#ffffff" opacity="0.8" />
+    <rect x="636" y="356" width="12" height="12" rx="2" fill="#e9d5ff" />
+    <rect x="654" y="360" width="16" height="4" rx="2" fill="#ffffff" opacity="0.8" />
+  </g>
+
+  <!-- Card 5: Far Top-Right Trend Line Card -->
+  <g filter="url(#cardShadow)">
+    <rect x="722" y="175" width="220" height="145" rx="8" fill="url(#cardBgAlt)" />
+    <!-- Header lines -->
+    <line x1="744" y1="195" x2="800" y2="195" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.9" />
+    <line x1="744" y1="205" x2="775" y2="205" stroke="#a78bfa" stroke-width="1.8" stroke-linecap="round" opacity="0.6" />
+    <!-- Inner chart area -->
+    <rect x="744" y="218" width="176" height="78" rx="5" fill="#3b0764" />
+    <!-- Grid axes -->
+    <line x1="755" y1="285" x2="910" y2="285" stroke="#6d28d9" stroke-width="1" opacity="0.5" />
+    <line x1="755" y1="230" x2="755" y2="285" stroke="#6d28d9" stroke-width="1" opacity="0.5" />
+    <!-- Trend line 1 -->
+    <polyline
+      points="755,270 780,265 805,245 830,260 855,235 880,248 905,230"
+      fill="none"
+      stroke="#c084fc"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <!-- Trend line 2 -->
+    <polyline
+      points="755,280 780,272 805,258 830,268 855,250 880,262 905,242"
+      fill="none"
+      stroke="#a855f7"
+      stroke-width="1.8"
+      stroke-dasharray="3 3"
+      stroke-linecap="round"
+    />
+    <!-- Data points -->
+    <circle cx="805" cy="245" r="3.5" fill="#ffffff" />
+    <circle cx="855" cy="235" r="3.5" fill="#ffffff" />
+    <circle cx="905" cy="230" r="3.5" fill="#ffffff" />
+    <!-- Bottom indicators -->
+    <rect x="850" y="304" width="40" height="4" rx="2" fill="#c4b5fd" opacity="0.8" />
+    <rect x="896" y="304" width="24" height="4" rx="2" fill="#a78bfa" opacity="0.6" />
+  </g>
+
+  <!-- ============================================================
+       CENTRAL FIGURE: DATA ANALYST AT DESK
+       ============================================================ -->
+
+  <!-- Office Chair Backrest -->
+  <path
+    d="M 252 510 C 248 450, 310 440, 388 440 C 400 470, 395 560, 390 620 L 270 615 C 255 570, 253 540, 252 510 Z"
+    fill="#581c87"
+  />
+
+  <!-- Torso & Yellow Jacket -->
+  <!-- Red Inner Shirt -->
+  <polygon points="460,535 518,535 510,615 470,615" fill="#ef4444" />
+  <polygon points="465,530 515,530 490,570" fill="#dc2626" />
+
+  <!-- Yellow Jacket Main Body -->
+  <path
+    d="M 388 540 C 370 560, 335 630, 330 730 L 575 730 C 570 690, 560 620, 565 580 C 568 555, 545 528, 515 522 C 480 540, 420 545, 388 540 Z"
+    fill="url(#jacketGrad)"
+  />
+
+  <!-- Jacket Lapels / Collar -->
+  <polygon points="440,525 468,585 452,650 435,550" fill="#f59e0b" />
+  <polygon points="538,525 512,585 526,650 542,550" fill="#d97706" />
+
+  <!-- Left Arm (Typing on laptop) -->
+  <path
+    d="M 388 540 C 360 590, 380 670, 430 700 C 460 705, 510 695, 546 685 L 535 660 C 490 668, 440 665, 415 630 C 405 605, 405 570, 415 545 Z"
+    fill="#f59e0b"
+  />
+  <!-- Left Hand / Fingers on keyboard -->
+  <path
+    d="M 525 675 C 540 672, 562 675, 568 682 C 555 690, 535 690, 520 682 Z"
+    fill="#fca5a5"
+  />
+
+  <!-- Right Arm (Raised gesturing / pointing up at data insights) -->
+  <!-- Upper Arm -->
+  <path
+    d="M 548 535 C 575 540, 600 565, 605 600 L 664 595 C 660 545, 615 510, 555 518 Z"
+    fill="#fbbf24"
+  />
+  <!-- Forearm (angled up towards charts) -->
+  <path
+    d="M 605 595 L 620 565 C 625 565, 665 565, 664 595 Z"
+    fill="#f59e0b"
+  />
+  <!-- Hand and Pointing Finger -->
+  <g transform="translate(614, 465)">
+    <!-- Palm / Knuckles -->
+    <ellipse cx="22" cy="72" rx="14" ry="16" fill="#fca5a5" />
+    <path d="M 12 65 C 10 75, 20 85, 32 82 C 38 78, 36 68, 30 65 Z" fill="#f87171" opacity="0.3" />
+    <!-- Index finger pointing directly up -->
+    <path
+      d="M 22 72 L 22 20 C 22 14, 30 14, 30 20 L 30 72 Z"
+      fill="#fca5a5"
+    />
+    <!-- Thumb & Folded Fingers -->
+    <ellipse cx="14" cy="62" rx="5" ry="9" fill="#fca5a5" />
+    <ellipse cx="28" cy="62" rx="4" ry="7" fill="#f87171" opacity="0.3" />
+  </g>
+
+  <!-- Neck -->
+  <polygon points="460,490 515,490 505,535 470,535" fill="#fca5a5" />
+  <path d="M 465 525 Q 490 538 510 525 L 505 535 L 470 535 Z" fill="#f87171" opacity="0.25" />
+
+  <!-- Head / Face -->
+  <path
+    d="M 445 425 C 445 375, 525 375, 525 425 C 525 470, 495 500, 475 500 C 455 500, 445 465, 445 425 Z"
+    fill="#fca5a5"
+  />
+
+  <!-- Hair (Voluminous Dark Updo / Wavy Top Haircut) -->
+  <path
+    d="M 440 435 C 430 420, 425 390, 440 365 C 455 340, 490 330, 520 340 C 555 350, 555 385, 545 405 C 540 415, 532 422, 532 432 C 522 430, 515 420, 508 410 C 495 395, 470 405, 455 422 C 448 428, 444 433, 440 435 Z"
+    fill="url(#hairGrad)"
+  />
+  <path
+    d="M 425 410 C 418 430, 428 470, 440 480 C 445 465, 442 435, 435 420 Z"
+    fill="url(#hairGrad)"
+  />
+  <path
+    d="M 490 330 C 520 315, 550 335, 555 365 C 540 355, 515 350, 490 330 Z"
+    fill="#312e81"
+  />
+
+  <!-- Desk Surface (Crisp modern perspective) -->
+  <polygon
+    points="245,600 770,460 745,620 270,685"
+    fill="#ede9fe"
+    opacity="0.2"
+  />
+  <!-- Main Desk Slab Top -->
+  <polygon
+    points="250,600 765,462 760,480 270,618"
+    fill="#f8fafc"
+    filter="url(#softShadow)"
+  />
+  <!-- Front Edge Chamfer of Desk -->
+  <polygon
+    points="250,600 760,480 750,510 275,635"
+    fill="#e2e8f0"
+  />
+  <polygon
+    points="275,635 750,510 740,518 280,642"
+    fill="#cbd5e1"
+  />
+
+  <!-- Modern Violet Laptop -->
+  <!-- Laptop Base on Desk -->
+  <polygon
+    points="445,600 680,545 745,555 520,612"
+    fill="#3b0764"
+  />
+  <polygon
+    points="445,600 520,612 522,618 450,605"
+    fill="#1e1b4b"
+  />
+  <!-- Laptop Screen Open (facing analyst) -->
+  <polygon
+    points="545,468 780,465 745,585 525,588"
+    fill="url(#laptopGrad)"
+    filter="url(#cardShadow)"
+  />
+  <!-- Screen Bezel Highlight / Logo -->
+  <circle cx="658" cy="524" r="8" fill="#a78bfa" opacity="0.6" />
+
+  <!-- Steaming White Coffee Mug on Desk -->
+  <g transform="translate(355, 560)">
+    <!-- Mug Body -->
+    <rect x="15" y="16" width="36" height="42" rx="4" fill="#ffffff" filter="url(#softShadow)" />
+    <path d="M 15 54 C 15 62, 51 62, 51 54 Z" fill="#e2e8f0" />
+    <ellipse cx="33" cy="18" rx="18" ry="6" fill="#f1f5f9" />
+    <!-- Dark Coffee -->
+    <ellipse cx="33" cy="19" rx="14" ry="4" fill="#3b1f14" />
+    <!-- Mug Handle -->
+    <path
+      d="M 51 24 C 62 24, 62 48, 51 48"
+      fill="none"
+      stroke="#ffffff"
+      stroke-width="5"
+      stroke-linecap="round"
+    />
+    <!-- Rising Steam Vapor (Wavy Lines) -->
+    <path
+      d="M 28 10 Q 32 0, 28 -8 Q 24 -16, 28 -24"
+      fill="none"
+      stroke="#a78bfa"
+      stroke-width="2"
+      stroke-linecap="round"
+      opacity="0.8"
+    />
+    <path
+      d="M 38 12 Q 42 2, 38 -6 Q 34 -14, 38 -22"
+      fill="none"
+      stroke="#c4b5fd"
+      stroke-width="2"
+      stroke-linecap="round"
+      opacity="0.6"
+    />
+  </g>
+</svg>

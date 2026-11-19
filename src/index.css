@@ -262,6 +262,10 @@ html {
   text-decoration: underline;
 }
 
+.floating-note {
+  z-index: 22 !important;
+}
+
 #about.section {
   padding-block: 54px 72px;
 }

@@ -627,13 +627,14 @@ export default function App() {
                   </a>
                   <span className="social-divider" />
                   <span className="location">
-                    <MapPin size={12} /> Pune, India
+                    <MapPin size={12} /> Mumbai, India
                   </span>
                 </div>
               </div>
 
               <div className="hero-art">
                 <DataSculpture />
+
                 <div className="floating-note note-top">
                   <span className="note-icon">
                     <ChartNoAxesCombined size={21} />
@@ -974,6 +975,40 @@ export default function App() {
             <div>
               <div className="eyebrow">05 / Experience</div>
               <h2>Learning by doing.</h2>
+              <div className="timeline pb-10">
+                <div className="timeline-date flex flex-wrap items-center gap-2">
+                  <span>NOV 2026 — PRESENT · 6 MONTHS</span>
+                  <span className="inline-flex items-center gap-1.5 font-semibold tracking-wider text-foreground/90">
+                    <span className="status-dot" /> CURRENT
+                  </span>
+                </div>
+                <h3>WBL Intern (Work-Based Learning)</h3>
+                <h4>SAMEER (Autonomous R&amp;D Lab under MeitY, Govt. of India)</h4>
+                <p className="inline-flex items-center gap-1.5 !mt-1.5">
+                  <MapPin size={12} className="text-primary shrink-0" /> IIT-B Campus
+                </p>
+                <ul>
+                  <li>
+                    Pursuing a 6-month Work-Based Learning (WBL) internship at
+                    SAMEER, an Autonomous R&amp;D Lab under the Ministry of
+                    Electronics and Information Technology (MeitY), Government
+                    of India.
+                  </li>
+                  <li>
+                    Working on-site at the IIT Bombay (IIT-B) campus, gaining
+                    hands-on exposure to applied research and technical R&amp;D
+                    workflows.
+                  </li>
+                </ul>
+                <div className="skill-tags mt-5">
+                  {['WBL Program', 'R&D', 'MeitY', 'IIT-B Campus'].map((tag) => (
+                    <span key={tag} className="skill-tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
               <div className="timeline">
                 <div className="timeline-date">FEB 2025 — MAY 2025</div>
                 <h3>Python with ML Intern</h3>
